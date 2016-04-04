@@ -1,19 +1,20 @@
 package org.pris2.refactoring;
 
-class Rental {
-	private Movie _movie;
-	private int _daysRented;
+public class Rental {
 
-	public Rental(Movie movie, int daysRented) {
-		_movie = movie;
-		_daysRented = daysRented;
-	}
+private Movie movie;
+private int daysRented;
 
-	public int getDaysRented() {
-		return _daysRented;
-	}
+public Rental(Movie inmovie, int indaysRented) {
+	movie = inmovie;
+	daysRented = indaysRented;
+}
 
-	public Movie getMovie() {
-		return _movie;
-	}
+public int getDaysRented() {
+	return daysRented;
+}
+
+public Movie getMovie() {
+	return movie;
+}
 }

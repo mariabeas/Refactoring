@@ -1,26 +1,29 @@
 package org.pris2.refactoring;
 
 public class Movie {
-	public static final int CHILDRENS = 2;
-	public static final int REGULAR = 0;
-	public static final int NEW_RELEASE = 1;
-	private String _title;
-	private int _priceCode;
 
-	public Movie(String title, int priceCode) {
-		_title = title;
-		_priceCode = priceCode;
-	}
+public static final int CHILDRENS = 2;
+public static final int REGULAR = 0;
+public static final int NEW_RELEASE = 1;
 
-	public int getPriceCode() {
-		return _priceCode;
-	}
+private String title;
+private int priceCode;
 
-	public void setPriceCode(int arg) {
-		_priceCode = arg;
-	}
-
-	public String getTitle() {
-		return _title;
-	};
+public Movie(String intitle, int inpriceCode) {
+	title = intitle;
+	priceCode = inpriceCode;
 }
+
+public int getPriceCode() {
+	return priceCode;
+}
+
+public void setPriceCode(int arg) {
+	priceCode = arg;
+}
+
+public String getTitle (){
+	return title;
+};
+
+} 
