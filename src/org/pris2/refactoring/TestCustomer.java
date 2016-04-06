@@ -25,7 +25,8 @@ public class TestCustomer {
 		customer1.addRental(rental1);
 		customer2.addRental(rental2);
 		customer2.addRental(rental3);
-		
+	
+		assertEquals(customer1.htmlStatement(),"<H1>Rentals for <EM>Carlos</EM></H1><P>"+"\n"+"La sirenita: 3.0<BR>"+"\n"+"<P>You owe <EM>3.0</EM><P>"+"\n"+"On this rental rental you earned <EM>1</EM> frequent renter points<P>");
 		
 		assertEquals(customer2.statement(),"Rental Record for Maria"+"\n"+"	Origen	2.0"+"\n"+"	Batman v Superman	6.0"+"\n"+"Amount owed is 8.0"+"\n"+"You earned 3 frequent renter points");
 		assertEquals(customer1.statement(),"Rental Record for Carlos"+"\n"+"	La sirenita	3.0"+"\n"+"Amount owed is 3.0"+"\n"+"You earned 1 frequent renter points");
